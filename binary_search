@@ -1,0 +1,27 @@
+function binary_search(arr,value){
+  let low = 0;
+  let high = array.length - 1;
+
+while(low <= high){
+
+  let mid = (low + high);
+  let guess = arr[mid];
+
+  if (guess == value) {
+   return array[mid];
+  }
+
+  if (guess > value) {
+    high = mid - 1
+  } else {
+    low = mid + 1
+  }
+  console.log('Не найдено число')
+  return "Не найдено число";
+}
+
+}
+
+var array = [1, 5, 7, 22, 55]
+
+binary_search(array, 5);
